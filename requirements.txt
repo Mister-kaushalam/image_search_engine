@@ -1,0 +1,16 @@
+h5py==2.10.0
+imutils==0.5.3
+isort==4.3.21
+joblib==0.15.1
+JSON-minify==0.3.0
+numpy==1.18.5
+Pillow==7.1.2
+progressbar==2.5
+pylint==2.5.2
+pyparsing==2.4.7
+python-dateutil==2.8.1
+PyWavelets==1.1.1
+redis==3.5.3
+scikit-image==0.17.2
+scikit-learn==0.23.1
+scipy==1.4.1
