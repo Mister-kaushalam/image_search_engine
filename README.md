@@ -133,6 +133,6 @@ $ python evaluate_spatial_verify.py --dataset dataset/ukbench --features-db outp
 
 ### Tips:
 1. Use Virtual environment if you have other version of python or OpenCV
-2. Remember to install keypoint and local invarient features while install OpenCV. They have to be flagged "ON" while installing opencv as they are copyrighted and can be only used of research or learning purposes
+2. Remember to install keypoint and local invarient features while installing OpenCV. They have to be flagged "ON" while installing opencv as they are copyrighted and can be only used of research or learning purposes
 3. If training on your own dataset, read the comments in the code to understand the process.
-4. Visualization and initial feature extraction will take a considerable amount of time.
+4. Visualization of vocabulary and initial feature extraction will take a considerable amount of time.
