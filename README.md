@@ -91,7 +91,7 @@ $ python extract_bovw.py --features-db output/features.hdf5 --codebook output/vo
 ```
 This will create a file idf.cpickle which will contain inverted document frequencies for the visual words.
 
-![bovw][result_images/forming bovw.png]
+![bovw](result_images/forming_bovw.png)
 
 ### 4. Building an inverted indexing of the features on Redis
 Start Redis server
@@ -112,10 +112,10 @@ $ python search.py --dataset dataset/ukbench --features-db output/features.hdf5 
 ```
 $ python evaluate.py --dataset dataset/ukbench --features-db output/features.hdf5 --bovw-db output/bovw.hdf5 --codebook output/vocab.cpickle --relevant dataset/ukbench/relevant.json
 ```
-![mid-eval](result_images/evalutaion.png)
+![mid-eval](result_images/evaluation.png)
 
 ### 5. Tf-idf weighting:
-Searching using tf-idf vectors and the cosine distance (versus the raw BOVW histogram counts and the \chi^{2}) is as simple as supplying the --idf switch to our search.py script
+Searching using tf-idf vectors and the cosine distance (versus the raw BOVW histogram counts and the chi-sqaured) is as simple as supplying the --idf switch to our search.py script
 
 ### 6. Spatial Verification on top results to rerank the results; increasing accuracy:
 ```
@@ -123,9 +123,16 @@ $ python search_spatial_verify.py --dataset dataset/ukbench --features-db output
 	--relevant dataset/ukbench/relevant.json --query dataset/ukbench/ukbench00000.jpg
 ```
 
-7. Final Evaluation:
+### 7. Final Evaluation:
 ```
 $ python evaluate_spatial_verify.py --dataset dataset/ukbench --features-db output/features.hdf5 --bovw-db output/bovw.hdf5 --codebook output/vocab.cpickle --idf output/idf.cpickle --relevant dataset/ukbench/relevant.json
 ```
 ![final-eval](result_images/evaluation_spatial_verifcation.png)
 
+## Author: Kaushal Bhavsar
+
+### Tips:
+1. Use Virtual environment if you have other version of python or OpenCV
+2. Remember to install keypoint and local invarient features while install OpenCV. They have to be flagged "ON" while installing opencv as they are copyrighted and can be only used of research or learning purposes
+3. If training on your own dataset, read the comments in the code to understand the process.
+4. Visualization and initial feature extraction will take a considerable amount of time.
