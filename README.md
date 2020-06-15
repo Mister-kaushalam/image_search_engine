@@ -1,4 +1,4 @@
-# Image Search Engine (CBIR)
+# Advanced Image Search Engine (CBIR system)
 
 Bringing you a production level quality of code for a **Content Based Image Retrival system**, commanly known as, Image Search Engine.
 The project is based solely on Computer Vision and little bit of machine learning to form clusters. 
