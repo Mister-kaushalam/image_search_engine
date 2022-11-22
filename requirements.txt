@@ -4,7 +4,7 @@ isort==4.3.21
 joblib==0.15.1
 JSON-minify==0.3.0
 numpy==1.18.5
-Pillow==7.1.2
+Pillow==9.3.0
 progressbar==2.5
 pylint==2.5.2
 pyparsing==2.4.7
